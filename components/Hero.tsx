@@ -35,7 +35,15 @@ export default function Hero() {
           </p>
           <a
             href="mailto:tiffjenh@gmail.com"
-            className="mt-6 text-base text-black transition-[text-decoration-color] duration-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-4 rounded-sm"
+            className={[
+              "mt-6 text-base text-black rounded-sm",
+              "relative inline-block",
+              "after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current",
+              "after:transition-[width] after:duration-300 after:ease-out",
+              "hover:after:w-full",
+              "active:opacity-90",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-2",
+            ].join(" ")}
           >
             tiffjenh@gmail.com
           </a>
@@ -45,7 +53,13 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open Tiffany Huang’s LinkedIn profile"
-            className="mt-4 inline-block rounded-lg transition-all duration-200 hover:scale-105 hover:bg-neutral-100/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-4"
+            className={[
+              "mt-4 inline-flex items-center justify-center rounded-lg p-2",
+              "transition-[transform,background-color] duration-200 ease-out",
+              "hover:scale-[1.05] hover:bg-neutral-100",
+              "active:scale-[0.98]",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-2",
+            ].join(" ")}
           >
             <Image
               src="/images/linkedin.png"

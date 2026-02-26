@@ -89,9 +89,14 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               className={[
-                "mt-1 block text-[18px] leading-snug text-black",
+                "mt-1 text-[18px] leading-snug text-black",
                 subtitleClass,
-                "hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-2 rounded-sm w-fit",
+                "relative inline-block w-fit",
+                "after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current",
+                "after:transition-[width] after:duration-300 after:ease-out",
+                "hover:after:w-full",
+                "active:opacity-90",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-2 rounded-sm",
               ].join(" ")}
             >
               {ctaText}
@@ -102,12 +107,31 @@ export default function ProjectCard({
             </div>
           )}
 
+          {urlHref && urlText ? (
+            <span className="mt-1 block">
+              <a
+                href={urlHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className={[
+                  "text-[14px] italic font-normal text-black",
+                  "relative inline-block",
+                  "after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current",
+                  "after:transition-[width] after:duration-300 after:ease-out",
+                  "hover:after:w-full",
+                  "active:opacity-90",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/20 focus-visible:ring-offset-2 rounded-sm",
+                ].join(" ")}
+              >
+                {urlText}
+              </a>
+            </span>
+          ) : null}
+
           <p className="mt-4 text-[14px] italic leading-relaxed text-black w-[260px]">
             {description}
           </p>
-
-          {/* keep url props for later, but do NOT render in this bottom mock layout */}
-          {/* (the bottom mock doesn't show url text lines) */}
         </div>
       </div>
     </div>

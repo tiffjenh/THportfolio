@@ -63,7 +63,7 @@ export default function Home() {
               <Fragment key={project.title}>
                 {index > 0 && (
                   <div
-                    className="mx-[30px] w-px bg-black/20 self-stretch flex-shrink-0"
+                    className="mx-[20px] w-px bg-black/20 self-stretch flex-shrink-0"
                     aria-hidden
                   />
                 )}

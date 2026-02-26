@@ -53,9 +53,9 @@ const PROJECTS = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-white py-6 pl-0 pr-6 md:py-8 md:pl-0 md:pr-8">
-      <div className="w-full max-w-[1440px] mx-auto">
+      <div className="w-full max-w-[1440px] mr-auto">
         <Hero />
-        <section className="mt-8 pb-6">
+        <section className="mt-4 pb-6">
           <SectionLabel className="mb-8">projects &amp; case studies</SectionLabel>
 
           <div className="flex flex-row flex-nowrap items-start">

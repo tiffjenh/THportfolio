@@ -5,7 +5,7 @@ const CONTAINER = "w-full max-w-[1040px]";
 
 export default function Hero() {
   return (
-    <section className={`${CONTAINER} pt-16 pb-24`}>
+    <section className={`${CONTAINER} pt-16 pb-8`}>
       <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10">
         {/* Left: illustration only */}
         <div className="w-fit mx-auto lg:mx-0 order-2 lg:order-1 flex-shrink-0">

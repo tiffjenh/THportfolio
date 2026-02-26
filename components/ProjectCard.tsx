@@ -102,7 +102,7 @@ export default function ProjectCard({
             </div>
           )}
 
-          <p className="mt-4 text-[16px] italic leading-relaxed text-black w-[260px]">
+          <p className="mt-4 text-[14px] italic leading-relaxed text-black w-[260px]">
             {description}
           </p>
 

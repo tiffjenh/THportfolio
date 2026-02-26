@@ -52,7 +52,7 @@ const PROJECTS = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white py-6 pl-0 pr-6 md:py-8 md:pl-0 md:pr-8">
+    <main className="min-h-screen bg-white py-6 pl-[5px] pr-6 md:py-8 md:pl-[5px] md:pr-8">
       <div className="w-full max-w-[1440px] mr-auto">
         <Hero />
         <section className="mt-4 pb-6">

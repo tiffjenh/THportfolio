@@ -12,10 +12,10 @@ const PROJECTS = [
     urlText: "www.wweekly.com",
     urlHref: "https://www.wweekly.com",
     ctaText: "Case Study",
-    ctaHref: CASE_STUDY_URL,
+    ctaHref: "https://docs.google.com/document/d/12HUR5vKPv1dRSGnp5eW1J2J0vghAN6Qk0YdJ6zl08s0/edit?tab=t.0",
     cardHref: "https://www.wweekly.com",
     description:
-      "WWEEKLY is an AI-powered earnings dashboard for independent service providers that turns recurring sessions into real-time financial clarity through voice logging and instant business insights.",
+      "WWEEKLY is an AI-powered earnings dashboard for independent service providers (like a piano teacher, tennis coach, or gardener) that turns recurring sessions into real-time financial clarity through voice logging and instant business insights.",
     imageSrc: "/images/wweekly.png",
     imageAlt: "WWEEKLY project thumbnail",
     subtitleVariant: "boldItalic" as const,
@@ -28,8 +28,9 @@ const PROJECTS = [
     ctaText: "Case Study",
     ctaHref: CASE_STUDY_URL,
     cardHref: "https://www.withwilbur.com",
+    wipLabel: "WIP - website not 100% complete",
     description:
-      "Finance doesn't have to be complicated — Wilbur is an AI-powered financial literacy platform that builds personalized, structured learning paths so people can understand money and investing without the overwhelm.",
+      "Finance doesn't have to be complicated — Wilbur is a financial literacy platform that builds personalized, structured learning paths with AI-features so people can understand money and investing without the overwhelm.",
     imageSrc: "/images/wilbur.png",
     imageAlt: "Wilbur project thumbnail",
     subtitleVariant: "boldItalic" as const,
@@ -52,11 +53,13 @@ const PROJECTS = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white py-6 pl-[10px] pr-6 md:py-8 md:pl-[10px] md:pr-8">
+    <main className="min-h-screen bg-white pt-4 pb-6 pl-[10px] pr-6 md:pt-6 md:pb-8 md:pl-[10px] md:pr-8">
       <div className="w-full max-w-[1440px] mr-auto">
         <Hero />
-        <section className="mt-4 pb-6">
-          <SectionLabel className="mb-8">projects &amp; case studies</SectionLabel>
+        <section className="mt-0 pb-6">
+          <div className="w-[240px] text-center mt-6">
+            <SectionLabel className="mb-6">projects &amp; case studies</SectionLabel>
+          </div>
 
           <div className="flex flex-row flex-nowrap items-start">
             {PROJECTS.map((project, index) => (
@@ -82,6 +85,7 @@ export default function Home() {
                     cardHref={project.cardHref}
                     subtitleVariant={project.subtitleVariant}
                     titleUppercase={project.titleUppercase}
+                    wipLabel={project.wipLabel}
                   />
                 </div>
               </Fragment>

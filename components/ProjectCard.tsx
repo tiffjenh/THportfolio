@@ -14,6 +14,7 @@ export type ProjectCardProps = {
   cardHref: string;
   subtitleVariant?: "boldItalic" | "bold" | "regular";
   titleUppercase?: boolean;
+  wipLabel?: string;
 };
 
 const THUMB = 240;          // thumbnail size (match mock scale)
@@ -31,6 +32,7 @@ export default function ProjectCard({
   cardHref,
   subtitleVariant = "bold",
   titleUppercase = false,
+  wipLabel,
 }: ProjectCardProps) {
   const open = () => window.open(cardHref, "_blank", "noopener,noreferrer");
 
@@ -126,10 +128,18 @@ export default function ProjectCard({
               >
                 {urlText}
               </a>
+              {wipLabel ? (
+                <span className="mt-0.5 block text-[14px] font-normal text-red-600" aria-label="Work in progress">
+                  {wipLabel}
+                </span>
+              ) : null}
             </span>
           ) : null}
 
-          <p className="mt-4 text-[14px] italic leading-relaxed text-black w-[260px]">
+          <p
+            className="mt-4 text-[14px] italic leading-relaxed text-black w-[260px] cursor-default"
+            onClick={(e) => e.stopPropagation()}
+          >
             {description}
           </p>
         </div>

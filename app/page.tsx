@@ -13,7 +13,7 @@ const PROJECTS = [
     urlHref: "https://www.wweekly.com",
     ctaText: "Case Study",
     ctaHref: CASE_STUDY_URL,
-    cardHref: CASE_STUDY_URL,
+    cardHref: "https://www.wweekly.com",
     description:
       "WWEEKLY is an AI-powered earnings dashboard for independent service providers that turns recurring sessions into real-time financial clarity through voice logging and instant business insights.",
     imageSrc: "/images/wweekly.png",
@@ -27,7 +27,7 @@ const PROJECTS = [
     urlHref: "https://www.withwilbur.com",
     ctaText: "Case Study",
     ctaHref: CASE_STUDY_URL,
-    cardHref: CASE_STUDY_URL,
+    cardHref: "https://www.withwilbur.com",
     description:
       "Finance doesn't have to be complicated — Wilbur is an AI-powered financial literacy platform that builds personalized, structured learning paths so people can understand money and investing without the overwhelm.",
     imageSrc: "/images/wilbur.png",
@@ -52,7 +52,7 @@ const PROJECTS = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white py-6 pl-[5px] pr-6 md:py-8 md:pl-[5px] md:pr-8">
+    <main className="min-h-screen bg-white py-6 pl-[10px] pr-6 md:py-8 md:pl-[10px] md:pr-8">
       <div className="w-full max-w-[1440px] mr-auto">
         <Hero />
         <section className="mt-4 pb-6">

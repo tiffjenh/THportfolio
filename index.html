@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Tiffany Huang — designer and developer">
+  <title>TH Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">TH</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-tag">Portfolio</p>
+      <h1 class="hero-title">
+        Hi, I'm <span class="name">Tiffany</span>.<br>
+        I design & build things for the web.
+      </h1>
+      <p class="hero-desc">
+        A creative focused on thoughtful interfaces and clean code.
+      </p>
+      <a href="#projects" class="btn btn-primary">View my work</a>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>
+          I'm a designer and developer based in [Your City]. I enjoy turning ideas into
+          elegant, user-centered digital experiences—from concept to code.
+        </p>
+        <p>
+          When I'm not at the screen, you'll find me [your hobby or interest].
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #e8ddd4 0%, #d4c4b0 100%);"></div>
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>Short description of your first project and what you built.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #c9d9c8 0%, #a8c4a6 100%);"></div>
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>Short description of your second project and technologies used.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #d4c4d4 0%, #b8a8b8 100%);"></div>
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>Short description of your third project and your role.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="contact-text">
+        I'm open to new opportunities and collaborations. Say hello.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com">your@email.com</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tiffany Huang. Built with care.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

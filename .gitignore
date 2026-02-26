@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies & build
+node_modules/
+.next/
+dist/
+out/
+
+# Env (don't commit secrets)
+.env
+.env.local
+.env.*.local

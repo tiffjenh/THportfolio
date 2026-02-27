@@ -30,7 +30,7 @@ const PROJECTS = [
     cardHref: "https://www.withwilbur.com",
     wipLabel: "WIP - website not 100% complete",
     description:
-      "Finance doesn't have to be complicated — Wilbur is a financial literacy platform that builds personalized, structured learning paths with AI-features so people can understand money and investing without the overwhelm.",
+      "Wilbur is an AI-powered financial literacy platform that dynamically adapts education to a user's life stage, employment type, financial goals, and experience level.",
     imageSrc: "/images/wilbur.png",
     imageAlt: "Wilbur project thumbnail",
     subtitleVariant: "boldItalic" as const,
